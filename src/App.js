@@ -12,15 +12,25 @@ function App() {
 
   return (
     <div className="App">
-      <ul>
-        {beers.map(beer => (
-            <li key={beer.id}>
-              {beer.name}
-              <img src={beer.image_url}/>
-            </li>
-            
-        ))}
-      </ul>
+      <header>Punk API</header>
+        <ul>
+          {beers.map(beer => (
+              <li className="beer" key={beer.id}>
+                <div className="beer-image">
+                  <img src={beer.image_url}/>
+                </div>
+                <ul className="beer-info">
+                  <li className="beer-name">
+                    {beer.name}
+                  </li>
+                  <li>
+                    {beer.tagline}
+                  </li>
+                </ul>
+              </li>
+              
+          ))}
+        </ul>
     </div>
   );
 }

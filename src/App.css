@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  background-color: #1ba6cd;
+  height: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;  
+  font-size: 25px;
+  font-weight: bold;
   color: white;
+  -webkit-box-shadow: 0px 5px 19px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 19px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 19px 1px rgba(0,0,0,0.75);
 }
 
-.App-link {
-  color: #61dafb;
+.beer{
+  list-style-type: none;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  padding: 10px;
+}
+.beer:hover{
+  -webkit-box-shadow: 0px 0px 36px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 36px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 36px -6px rgba(0,0,0,0.75);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul{
+  max-width: 800px;
+  padding: 0;
+  margin: 10px auto;
+}
+
+img{
+  height: 150px;
+}
+
+.beer-image{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.beer-info{
+  margin-left: 15px;
+  list-style-type: none;
+}.beer-name{
+  font-weight: bold;
 }
